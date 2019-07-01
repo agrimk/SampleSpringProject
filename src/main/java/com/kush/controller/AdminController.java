@@ -20,8 +20,8 @@ public class AdminController {
     @Autowired
     AdminService adminService;
 
-    @RequestMapping("/imputEmployee")
-    public boolean imputEmployee(HttpServletRequest httpRequest)
+    @RequestMapping("/inputEmployee")
+    public boolean inputEmployee(HttpServletRequest httpRequest)
     {
         return adminService.inputEmployee(httpRequest.getParameter("userId"),
                 httpRequest.getParameter("name"),

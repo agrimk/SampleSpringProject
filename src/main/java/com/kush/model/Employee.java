@@ -1,11 +1,22 @@
 package com.kush.model;
 
+import javax.persistence.Id;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "Employee")
 public class Employee {
 
-    String name;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     String id;
     String password;
-
+    String name;
     public Employee() {
     }
 
